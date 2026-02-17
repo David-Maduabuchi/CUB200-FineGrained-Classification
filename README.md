@@ -79,7 +79,7 @@ CUB200-FineGrained-Classification/
 │       ├── __init__.py
 │       ├── seed.py
 │       ├── logging.py
-│       └── unfreeze.py     # renamed from frozen.py
+│       └── unfreeze.py
 │
 ├── configs/
 │   ├── base.yaml
