@@ -3,7 +3,7 @@
 PyTorch code that hits ~84.5% top-1 on the official test set (single model, no tricks).
 
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)]()
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.6-red.svg)]()
+[![PyTorch 2.6](https://img.shields.io/badge/PyTorch-2.6-red.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
 
 ## Results
@@ -29,12 +29,15 @@ Fast ways:
   `huggingface-cli download tonyassi/cub-200-2011 --local-dir data/raw/CUB_200_2011`
 
 After unzip you need:
+
+````bash
 data/raw/CUB_200_2011/
 ├── images/
 ├── images.txt
 ├── image_class_labels.txt
 ├── bounding_boxes.txt
 └── train_test_split.txt
+````
 
 ## Install & Run
 
