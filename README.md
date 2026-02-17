@@ -55,8 +55,8 @@ CUB200-FineGrained-Classification/
 ├── LICENSE
 │
 ├── data/
-│   ├── raw/                # ← unzip dataset here (do NOT commit images)
-│   ├── metadata/           # ← annotation txt files (committed)
+│   ├── raw/                # unzip dataset here (do NOT commit images)
+│   ├── metadata/           # annotation txt files (committed)
 │   └── processed/          # empty for now
 │
 ├── notebooks/
