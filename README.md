@@ -48,7 +48,7 @@ python scripts/train.py
 
 ## Project Structure (Order)
 
-````bash
+```bash
 CUB200-FineGrained-Classification/
 ├── README.md
 ├── requirements.txt
@@ -89,4 +89,3 @@ CUB200-FineGrained-Classification/
     ├── train.py
     └── evaluate.py
     ```
-````
