@@ -10,7 +10,6 @@ PyTorch code that hits ~84.5% top-1 on the official test set (single model, no t
 
 | Split | Top-1  | Top-5  |
 | ----- | ------ | ------ |
-| Val   | 83.67% | —      |
 | Test  | 84.48% | 98.38% |
 
 Backbone: Swin-B (pretrained on ImageNet-22k → 1k)  
@@ -48,7 +47,7 @@ python scripts/train.py
 
 ## Project Structure
 
-```bash
+````bash
 CUB200-FineGrained-Classification/
 ├── README.md
 ├── requirements.txt
@@ -88,4 +87,4 @@ CUB200-FineGrained-Classification/
 └── scripts/
     ├── train.py
     └── evaluate.py
-    ```
+````
