@@ -46,7 +46,7 @@ pip install -r requirements.txt
 python scripts/train.py
 ```
 
-## Project Structure (Order)
+## Project Structure
 
 ```bash
 CUB200-FineGrained-Classification/
