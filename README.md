@@ -8,9 +8,9 @@ PyTorch code that hits ~84.5% top-1 on the official test set (single model, no t
 
 ## Results
 
-| Split | Top-1 | Top-5 |
-|-------|-------|-------|
-| Val   | 83.67% | —     |
+| Split | Top-1  | Top-5  |
+| ----- | ------ | ------ |
+| Val   | 83.67% | —      |
 | Test  | 84.48% | 98.38% |
 
 Backbone: Swin-B (pretrained on ImageNet-22k → 1k)  
@@ -48,6 +48,7 @@ python scripts/train.py
 
 ## Project Structure
 
+````bash
 CUB200-FineGrained-Classification/
 ├── README.md
 ├── requirements.txt
@@ -55,7 +56,7 @@ CUB200-FineGrained-Classification/
 ├── LICENSE
 │
 ├── data/
-│   ├── raw/                # unzip dataset here (do NOT commit images)
+|   ├── raw/                # unzip dataset here
 │   ├── metadata/           # annotation txt files (committed)
 │   └── processed/          # empty for now
 │
@@ -87,3 +88,5 @@ CUB200-FineGrained-Classification/
 └── scripts/
     ├── train.py
     └── evaluate.py         # stub / planned
+    ```
+````
