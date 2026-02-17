@@ -1,0 +1,10 @@
+# requirements.txt
+# Core dependencies for the CUB200 Swin-B baseline
+
+torch
+torchvision
+timm>=1.0.0
+pillow
+tqdm
+numpy
+pandas

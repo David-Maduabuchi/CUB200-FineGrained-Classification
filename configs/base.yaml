@@ -1,0 +1,30 @@
+seed: 42
+num_classes: 200
+img_size: 224
+batch_size: 48
+num_workers: 4
+
+epochs: 20
+optimizer: adamw
+lr: 0.0003
+weight_decay: 0.0001
+scheduler: cosine
+T_max: 20
+
+amp: true                  # mixed precision
+unfreeze_after: 5          # epoch when we start unfreezing last 2 swin stages
+
+model:
+  name: swin_base_patch4_window7_224
+  freeze_vision: true
+  vision_dim: 1024
+
+paths:
+  data_root: "data/raw/CUB_200_2011"     # change this when not on kaggle
+  metadata_dir: "data/metadata"          # where txt files live
+  save_dir: "runs/exp_${now}"            # placeholder
+
+logging:
+  log_file: "train.log"
+  csv_name: "training_log.csv"
+  best_model_name: "best_model.pth"

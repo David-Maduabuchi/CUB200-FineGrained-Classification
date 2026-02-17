@@ -1,0 +1,17 @@
+defaults:
+  - base.yaml
+
+# overrides / additions specific to this run
+experiment_name: swin-b-frozen-unfreeze-epoch5
+
+model:
+  freeze_vision: true
+
+train:
+  batch_size: 48               # can lower to 32 if OOM
+  val_size_per_class: 3
+
+# you can add wandb / tensorboard here later
+# wandb:
+#   project: cub200-swin
+#   entity: yourname
